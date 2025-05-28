@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "40e087dc23d419ee8620dc7bcfd1bc5d",
+      "MD5-CAM-1.0.1" : "40990076894b96503677888c51866eae",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -1135,43 +1135,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0027.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at0028", "at0029", "at0030" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_BOOLEAN",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0043.1",
                       "attributes" : [ ],
@@ -1208,13 +1171,6 @@
             "text" : "Reise utenfor norden",
             "description" : "Et sett spørsmål og tilhørende svar som brukes for å kartlegge reiseaktivitet.",
             "comment" : "Svarene kan være selvrapportert."
-          },
-          "at0027.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027.1",
-            "text" : "Har du i løpet av de siste 12 måneder vært i et land utenfor Norden?",
-            "description" : "Finnes det historikk for reiseaktivitet relatert til kartleggingsformålet?",
-            "comment" : "I et templat vil dataelementet vanligvis bli omnavnet til det spesifikke spørsmålet som stilles. Det foreslåtte verdisettet kan tilpasses til lokal bruk ved å velge mellom DV_TEXT eller DV_BOOLEAN datatypene for å tilrettelegge for hvert enkelt bruksområde."
           }
         }
       },
