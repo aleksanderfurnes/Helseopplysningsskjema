@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2c44693e8e8846a0b5b83ef56c0376e6",
+      "MD5-CAM-1.0.1" : "92cd934e6e8f2d2d0c429fd924e27364",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -550,7 +550,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "a3fe68e0-db3e-4dde-98c2-4f9bd4182862",
+    "uid" : "0a480900-c8a8-44a2-88e3-31949d153641",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -559,7 +559,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "b465a4a0310a437609acef43cb4447ac"
+        "PARENT:MD5-CAM-1.0.1" : "216d89edede978c832a880ade6940363"
       },
       "details" : { }
     },
