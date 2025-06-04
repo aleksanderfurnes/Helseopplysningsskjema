@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"216d89edede978c832a880ade6940363">
+		["MD5-CAM-1.0.1"] = <"c6b80e2bb4e69f0700a998f8a434fcda">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
@@ -68,7 +68,23 @@ definition
 			}
 			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Ordinal-scoring
 				value matches {
-					DV_QUANTITY matches {*}
+					C_DV_QUANTITY <
+						property = <[openehr::755]>
+						list = <
+							["1"] = <
+								units = <"[arb'U]">
+								magnitude = <|0.0..4.0|>
+								units_system = <"http://unitsofmeasure.org">
+								units_display_name = <"arb. unit">
+							>
+						>
+
+						assumed_value = <
+							units = <"[arb'U]">
+							magnitude = <0.0>
+							precision = <-1>
+						>
+					>
 				}
 			}
 		}
@@ -149,6 +165,10 @@ ontology
 				["at0020"] = <
 					text = <"Ordinal-scoring">
 					description = <"">
+				>
+				["[arb'U]"] = <
+					text = <"[arb'U]">
+					description = <"arbitrary unit">
 				>
 			>
 		>
