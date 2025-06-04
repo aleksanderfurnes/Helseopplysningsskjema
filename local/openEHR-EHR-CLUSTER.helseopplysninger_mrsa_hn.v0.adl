@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c6b80e2bb4e69f0700a998f8a434fcda">
+		["MD5-CAM-1.0.1"] = <"619c93525f55eb2d8cd531c0e6b57aab">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
@@ -73,7 +73,6 @@ definition
 						list = <
 							["1"] = <
 								units = <"[arb'U]">
-								magnitude = <|0.0..4.0|>
 								units_system = <"http://unitsofmeasure.org">
 								units_display_name = <"arb. unit">
 							>
