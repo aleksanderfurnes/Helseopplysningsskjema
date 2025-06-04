@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bfcc6b287032859d85b0ead71afe8769">
+		["MD5-CAM-1.0.1"] = <"ba7362f4dd4d3b855cb9b3ce2b0e4b75">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
@@ -66,19 +66,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Ordinal-scoring
-				value matches {
-					C_DV_QUANTITY <
-						
-						list = <
-							["1"] = <
-								units = <"score">
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0021] occurrences matches {0..1} matches {    -- Scoring igjen
+			ELEMENT[at0021] occurrences matches {0..1} matches {    -- __Scoring
 				value matches {
 					DV_COUNT matches {*}
 				}
@@ -158,17 +146,14 @@ ontology
 					text = <"Nei jeg har ikke tatt MRSA-prøve">
 					description = <"">
 				>
-				["at0020"] = <
-					text = <"Ordinal-scoring">
-					description = <"">
-				>
 				["[arb'U]"] = <
 					text = <"[arb'U]">
 					description = <"arbitrary unit">
 				>
 				["at0021"] = <
-					text = <"Scoring igjen">
+					text = <"__Scoring">
 					description = <"">
+					comment = <"Teknisk element som ikke skal vises til verken pasient eller kliniker, brukes til å vise/skjule spørsmålet om MRSA-prøve.">
 				>
 			>
 		>
