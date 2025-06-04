@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "7a5ceda0cc7e130be7b6aadcfb5da07f",
+      "MD5-CAM-1.0.1" : "64e9edd0d3bb3b22deec92e909c087f3",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -159,7 +159,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "helsenorge_funksjonalitet_test_hn_v0",
+          "text" : "helsenorge_funksjonalitet_test_hn_v1",
           "description" : "Generic container for information provided by an individual."
         }
       },
@@ -167,7 +167,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "helsenorge_funksjonalitet_test_hn_v0",
+          "text" : "helsenorge_funksjonalitet_test_hn_v1",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
