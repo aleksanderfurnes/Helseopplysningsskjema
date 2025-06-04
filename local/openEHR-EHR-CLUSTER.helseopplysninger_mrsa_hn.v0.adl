@@ -24,7 +24,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
-		["MD5-CAM-1.0.1"] = <"714d4cbfea5b6abe8d8c0506d2e14669">
+		["MD5-CAM-1.0.1"] = <"907d0bc996ee1c2a4e4710c7c46d2062">
 	>
 
 definition
@@ -69,10 +69,13 @@ definition
 			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Ordinal-scoring
 				value matches {
 					C_DV_QUANTITY <
-						property = <[openehr::500]>
+						
 						list = <
 							["1"] = <
 								units = <"sr">
+							>
+							["2"] = <
+								units = <"[arb'U]">
 							>
 						>
 					>
