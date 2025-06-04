@@ -24,7 +24,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
-		["MD5-CAM-1.0.1"] = <"0ff650df812072238c51dad2babbf2fc">
+		["MD5-CAM-1.0.1"] = <"752d420e315d9684fe4a39ab18d512e3">
 	>
 
 definition
@@ -78,6 +78,11 @@ definition
 							>
 						>
 					>
+				}
+			}
+			ELEMENT[at0021] occurrences matches {0..1} matches {    -- Scoring igjen
+				value matches {
+					DV_COUNT matches {*}
 				}
 			}
 		}
@@ -162,6 +167,10 @@ ontology
 				["[arb'U]"] = <
 					text = <"[arb'U]">
 					description = <"arbitrary unit">
+				>
+				["at0021"] = <
+					text = <"Scoring igjen">
+					description = <"">
 				>
 			>
 		>
