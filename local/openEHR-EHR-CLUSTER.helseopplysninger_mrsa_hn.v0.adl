@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b465a4a0310a437609acef43cb4447ac">
+		["MD5-CAM-1.0.1"] = <"216d89edede978c832a880ade6940363">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
@@ -64,6 +64,11 @@ definition
 							at0019]    -- Nei jeg har ikke tatt MRSA-prøve
 						}
 					}
+				}
+			}
+			ELEMENT[at0020] occurrences matches {0..1} matches {    -- Ordinal-scoring
+				value matches {
+					DV_QUANTITY matches {*}
 				}
 			}
 		}
@@ -139,6 +144,10 @@ ontology
 				>
 				["at0019"] = <
 					text = <"Nei jeg har ikke tatt MRSA-prøve">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Ordinal-scoring">
 					description = <"">
 				>
 			>
