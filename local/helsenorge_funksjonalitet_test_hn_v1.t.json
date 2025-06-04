@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "64e9edd0d3bb3b22deec92e909c087f3",
+      "MD5-CAM-1.0.1" : "4cbd914a9493b8a088ad88972cfa6d3f",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -459,6 +459,15 @@
                           "nodeId" : "at0025.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_ARCHETYPE_ROOT",
+                          "rmTypeName" : "CLUSTER",
+                          "occurrences" : "0..1",
+                          "nodeId" : "at0041.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ],
+                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-helseopplysninger_mrsa_hn-001.v0",
+                          "referenceType" : "archetypeOverlay"
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -588,6 +597,57 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "62243f2a-daea-499e-903b-a7a5436f51ce",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "bfcc6b287032859d85b0ead71afe8769"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.helseopplysninger_mrsa_hn.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-helseopplysninger_mrsa_hn-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "af6691c8-87cc-35ba-9451-c1382b6e6cf8",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
