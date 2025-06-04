@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "bbc8cbf940420e2523278928d684f344",
+      "MD5-CAM-1.0.1" : "e00c71a0d61b53aece66083bf47ff12a",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -167,7 +167,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "helsenorge_funksjonalitet_test_hn_v1",
+          "text" : "helsenorge_funksjonalitet_test_hn_v2",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
