@@ -23,8 +23,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 		["MD5-CAM-1.0.1"] = <"bfcc6b287032859d85b0ead71afe8769">
+		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
 definition
@@ -72,10 +72,7 @@ definition
 						
 						list = <
 							["1"] = <
-								units = <"sr">
-							>
-							["2"] = <
-								units = <"[arb'U]">
+								units = <"score">
 							>
 						>
 					>
