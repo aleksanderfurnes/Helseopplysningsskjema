@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3283547c4b271962cb829ab93f7e7f1a">
+		["MD5-CAM-1.0.1"] = <"f4f38bef1a63a7d5f6f9f2dbecfe41ae">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- helseopplysninger_mrsa_hn
+	CLUSTER[at0000] matches {    -- Har du i løpet av de siste 12 måneder vært i et land utenfor Norden, hvor du har:
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] matches {    -- Vært innlagt i helseinstitusjon?
 				value matches {
@@ -79,7 +79,7 @@ ontology
 		["nb"] = <
 			items = <
 				["at0000"] = <
-					text = <"helseopplysninger_mrsa_hn">
+					text = <"Har du i løpet av de siste 12 måneder vært i et land utenfor Norden, hvor du har:">
 					description = <"helseopplysninger_mrsa_hn">
 				>
 				["at0001"] = <
