@@ -23,32 +23,32 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f4f38bef1a63a7d5f6f9f2dbecfe41ae">
+		["MD5-CAM-1.0.1"] = <"06380688f48ee97b45b4f78127a3c727">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Har du i løpet av de siste 12 måneder vært i et land utenfor Norden, hvor du har:
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] matches {    -- Vært innlagt i helseinstitusjon?
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Vært innlagt i helseinstitusjon?
 				value matches {
 					1|[local::at0002],
 					0|[local::at0003]
 				}
 			}
-			ELEMENT[at0004] matches {    -- Fått omfattende undersøkelse eller behandling i en helsetjeneste eller hos tannlege?
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Fått omfattende undersøkelse eller behandling i en helsetjeneste eller hos tannlege?
 				value matches {
 					1|[local::at0005],
 					0|[local::at0006]
 				}
 			}
-			ELEMENT[at0007] matches {    -- Arbeidet som helsearbeider?
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Arbeidet som helsearbeider?
 				value matches {
 					1|[local::at0008],
 					0|[local::at0009]
 				}
 			}
-			ELEMENT[at0010] matches {    -- Oppholdt deg i barnehjem eller flyktningleir?
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Oppholdt deg i barnehjem eller flyktningleir?
 				value matches {
 					1|[local::at0011],
 					0|[local::at0012]
