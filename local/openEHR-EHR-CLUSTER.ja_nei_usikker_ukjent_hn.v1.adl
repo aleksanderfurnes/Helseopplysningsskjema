@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e667487015c216dfa5d22e7112aeee72">
+		["MD5-CAM-1.0.1"] = <"2cc7cd0ac483a6fe9ff7d89d4410b4c5">
 		["build_uid"] = <"f3ef0c52-c1cc-3efa-ac59-6f7f38981605">
 	>
 
@@ -41,6 +41,11 @@ definition
 							at0005]    -- Ukjent
 						}
 					}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Kommentar
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -72,6 +77,10 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Ukjent">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Kommentar">
 					description = <"">
 				>
 			>
