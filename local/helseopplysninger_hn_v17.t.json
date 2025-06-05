@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2437d4be3f7e442f92334bb0bf5b1beb",
+      "MD5-CAM-1.0.1" : "6e4f5ca7a303cfdc15ace123a7b4e2c5",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -1974,11 +1974,135 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
+                              "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Nærmeste pårørende",
+                                "@type" : "DV_TEXT"
+                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0005.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.15" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Pårørende under 18 år",
+                                "@type" : "DV_TEXT"
+                              },
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.17" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0025.2",
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -2006,6 +2130,18 @@
             "code" : "at0022.1",
             "text" : "Specific social context (2)",
             "description" : "Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose."
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "fi" : {
@@ -2014,6 +2150,18 @@
             "code" : "at0022.1",
             "text" : "*Specific social context (en) (2)",
             "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "nb" : {
@@ -2022,6 +2170,24 @@
             "code" : "at0022.2",
             "text" : "Nærmeste pårørende",
             "description" : "Detaljer om et spesifikt sosialt forhold, eller en gruppering av slike, som er innenfor kartleggingsformålet."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Pårørende under 18 år",
+            "description" : "Detaljer om et spesifikt sosialt forhold, eller en gruppering av slike, som er innenfor kartleggingsformålet."
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         },
         "it" : {
@@ -2030,6 +2196,18 @@
             "code" : "at0022.1",
             "text" : "*Specific social context (en) (2)",
             "description" : "*Details about a specified social context or issue, or a grouping of these, relevant for the screening purpose. (en)"
+          },
+          "ac0.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.15",
+            "description" : ""
+          },
+          "ac0.17" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.17",
+            "description" : ""
           }
         }
       },
@@ -2095,6 +2273,31 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.12",
           "members" : [ ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0023", "at0024", "at0027", "at0050" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0023", "at0024", "at0027" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0023", "at0024" ]
         }
       }
     },
