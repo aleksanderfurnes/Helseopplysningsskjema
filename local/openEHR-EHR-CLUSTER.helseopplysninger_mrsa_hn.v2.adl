@@ -23,52 +23,28 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0e0c6301225a93a6e1e51bc3fb6309db">
+		["MD5-CAM-1.0.1"] = <"36fa1e69810a5d5c2737957b724ef29c">
 		["build_uid"] = <"af6691c8-87cc-35ba-9451-c1382b6e6cf8">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- helseopplysninger_mrsa_hn
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Vært innlagt i helseinstitusjon?
-				value matches {
-					1|[local::at0002],
-					0|[local::at0003]
-				}
-			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Fått omfattende undersøkelse eller behandling i en helsetjeneste eller hos tannlege?
-				value matches {
-					1|[local::at0005],
-					0|[local::at0006]
-				}
-			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Arbeidet som helsearbeider?
-				value matches {
-					1|[local::at0008],
-					0|[local::at0009]
-				}
-			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Oppholdt deg i barnehjem eller flyktningleir?
-				value matches {
-					1|[local::at0011],
-					0|[local::at0012]
-				}
-			}
-			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Har du etter hjemkomst tatt en MRSA-prøve?
+			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Har du etter hjemkomst testet deg for antibiotikaresistente bakterier?
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
 							at0017,    -- Ja, den var negativ
 							at0018,    -- Ja, den var positiv
-							at0019]    -- Nei jeg har ikke tatt MRSA-prøve
+							at0019]    -- Nei jeg har ikke testet meg
 						}
 					}
 				}
 			}
-			ELEMENT[at0021] occurrences matches {0..1} matches {    -- __Scoring
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Kontakt legekontoret ditt for å teste deg. Prøvene tas 14 dager før du skal møte på sykehuset. Prøvetakingen er gratis.
 				value matches {
-					DV_COUNT matches {*}
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -82,56 +58,8 @@ ontology
 					text = <"helseopplysninger_mrsa_hn">
 					description = <"helseopplysninger_mrsa_hn">
 				>
-				["at0001"] = <
-					text = <"Vært innlagt i helseinstitusjon?">
-					description = <"">
-				>
-				["at0002"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0003"] = <
-					text = <"Nei">
-					description = <"">
-				>
-				["at0004"] = <
-					text = <"Fått omfattende undersøkelse eller behandling i en helsetjeneste eller hos tannlege?">
-					description = <"">
-				>
-				["at0005"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0006"] = <
-					text = <"Nei">
-					description = <"">
-				>
-				["at0007"] = <
-					text = <"Arbeidet som helsearbeider?">
-					description = <"">
-				>
-				["at0008"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0009"] = <
-					text = <"Nei">
-					description = <"">
-				>
-				["at0010"] = <
-					text = <"Oppholdt deg i barnehjem eller flyktningleir?">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Ja">
-					description = <"">
-				>
-				["at0012"] = <
-					text = <"Nei">
-					description = <"">
-				>
 				["at0016"] = <
-					text = <"Har du etter hjemkomst tatt en MRSA-prøve?">
+					text = <"Har du etter hjemkomst testet deg for antibiotikaresistente bakterier?">
 					description = <"">
 				>
 				["at0017"] = <
@@ -143,17 +71,16 @@ ontology
 					description = <"">
 				>
 				["at0019"] = <
-					text = <"Nei jeg har ikke tatt MRSA-prøve">
+					text = <"Nei jeg har ikke testet meg">
 					description = <"">
 				>
 				["[arb'U]"] = <
 					text = <"[arb'U]">
 					description = <"arbitrary unit">
 				>
-				["at0021"] = <
-					text = <"__Scoring">
+				["at0023"] = <
+					text = <"Kontakt legekontoret ditt for å teste deg. Prøvene tas 14 dager før du skal møte på sykehuset. Prøvetakingen er gratis.">
 					description = <"">
-					comment = <"Teknisk element som ikke skal vises til verken pasient eller kliniker, brukes til å vise/skjule spørsmålet om MRSA-prøve.">
 				>
 			>
 		>
