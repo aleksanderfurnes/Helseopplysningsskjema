@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "dc079855da7eaeb257c358a3825eecd4",
+      "MD5-CAM-1.0.1" : "733f39b7e1635d513da6dcb10ece4662",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -1514,15 +1514,6 @@
                           "@type" : "C_ARCHETYPE_ROOT",
                           "rmTypeName" : "CLUSTER",
                           "occurrences" : "0..1",
-                          "nodeId" : "at0041.2",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ],
-                          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-helseopplysninger_mrsa_hn-002.v1",
-                          "referenceType" : "archetypeOverlay"
-                        }, {
-                          "@type" : "C_ARCHETYPE_ROOT",
-                          "rmTypeName" : "CLUSTER",
-                          "occurrences" : "0..1",
                           "nodeId" : "at0041.3",
                           "attributes" : [ ],
                           "attributeTuples" : [ ],
@@ -1716,77 +1707,6 @@
       },
       "otherDetails" : { }
     } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "19f7eaf0-693f-460d-9388-c6b64b8bf8d9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "06380688f48ee97b45b4f78127a3c727"
-      },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.helseopplysninger_mrsa_hn.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-helseopplysninger_mrsa_hn-002.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000",
-            "text" : "Har du i løpet av de siste 12 måneder vært i et land utenfor Norden, hvor du har:",
-            "description" : "**“Omfattende undersøkelse eller behandling”** betyr at en eller flere av følgende kriterier er oppfylt: \n\n    - undersøkelsen/behandlingen varte i flere timer\n    - hud, slimhinne eller kroppsåpning ble punktert, f.eks blodprøve, veneflon, kateter, sprøyte eller lignende\n    - sår ble sydd eller på annen måte behandlet\n    - det ble gjennomført en operasjon\n**“Arbeidet som helsearbeider”** betyr alt pasientrettet arbeid, inkludert bistand og nødhjelp"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "af6691c8-87cc-35ba-9451-c1382b6e6cf8",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "nb"
-    },
-    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "71f9a9af-bf5d-4d9a-8209-5247697e17ec",
