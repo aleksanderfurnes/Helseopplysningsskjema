@@ -1,0 +1,123 @@
+archetype (adl_version=1.4; uid=c22d6f4a-e775-4092-b235-b45e4f5e082c)
+	openEHR-EHR-ADMIN_ENTRY.test_helseopplysninger_oppsummering_hn.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-06-19">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"7d426e5d985bc121f4737e0913f29473">
+		["build_uid"] = <"2a334a1f-0895-3f23-b12b-c5bed62330f2">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- test_helseopplysninger_oppsummering_hn
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Gravid
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003,    -- Ja
+									at0004]    -- Usikker
+								}
+							}
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Ammer
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Prøve for antibiotikaresistente bakterier
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Alkoholforbruk
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0008,    -- Daglig
+									at0009,    -- Ukentlig
+									at0010]    -- Sjeldent
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"test_helseopplysninger_oppsummering_hn">
+					description = <"test_helseopplysninger_oppsummering_hn">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Gravid">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Usikker">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Ammer">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Prøve for antibiotikaresistente bakterier">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Alkoholforbruk">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Daglig">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Ukentlig">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Sjeldent">
+					description = <"">
+				>
+			>
+		>
+	>
