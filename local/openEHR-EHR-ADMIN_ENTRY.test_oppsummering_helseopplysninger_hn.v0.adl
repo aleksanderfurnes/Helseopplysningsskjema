@@ -1,0 +1,903 @@
+archetype (adl_version=1.4; uid=9f2af7d1-2338-4bdb-bac7-1b6b12c8f284)
+	openEHR-EHR-ADMIN_ENTRY.test_oppsummering_helseopplysninger_hn.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::nb]>
+
+description
+	original_author = <
+		["date"] = <"2025-06-19">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"6ae8353ca752e46e7a67aad9514c072e">
+		["build_uid"] = <"3feee644-cb1c-35f5-8aad-f9ab65b26108">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {    -- test_oppsummering_helseopplysninger_hn
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Høyde:
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"cm">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Vekt:
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::124]>
+								list = <
+									["1"] = <
+										units = <"kg">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- BMI:
+						value matches {
+							DV_QUANTITY matches {*}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Vekttap siste ukene:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Beskrivelse
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Gravid:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Uker gravid
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::128]>
+								list = <
+									["1"] = <
+										units = <"wk">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Ammer
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Antibiotikaresistente bakterier prøve
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Alkoholforbruk
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Røyker
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0016] occurrences matches {0..1} matches {    -- Bruker snus
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Sluttet å røyke i:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0018] occurrences matches {0..1} matches {    -- Årstall
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Sluttet med snus i:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Årstall
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Bruker rusmidler
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Blodfortynnende medikamenter:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Reseptbelagte medikamenter:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0024] occurrences matches {0..1} matches {    -- Reseptfrie medikamenter, naturmedisiner eller kosttilskudd:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- Legemiddelallergi:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0026] occurrences matches {0..1} matches {    -- Beskrivelse legemiddelallergi
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Hjerte- karsykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0028] occurrences matches {0..1} matches {    -- Beskrivelse hjerte- karsykdom
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Får brystsmerter eller tungpust ved trappegange i normalt tempo
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0030] occurrences matches {0..1} matches {    -- Beskrivelse brystsmerter
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Hypertensjon:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Beskrivelse hypertensjon
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Søvnapné:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Bruker CPAP eller BiPAP
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Økt blødningstendens:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Beskrivelse blødningstendens
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0037] occurrences matches {0..1} matches {    -- Nevrologisk sykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Beskrivelse nevrologisk sykdom
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0039] occurrences matches {0..1} matches {    -- Nyresykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Beskrivelse nyresykdom
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Leversykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Beskrivelse leversykdom
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Diabetes:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Beskrivelse diabetes
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Stoffskifteproblemer:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0046] occurrences matches {0..1} matches {    -- Beskrivelse stoffskifteproblemer
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0047] occurrences matches {0..1} matches {    -- Leddgikt eller muskel- og skjelettsykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0048] occurrences matches {0..1} matches {    -- Beskrivelse leddgikt
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0049] occurrences matches {0..1} matches {    -- Mage/tarmproblemer:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0050] occurrences matches {0..1} matches {    -- Beskrivelse mage/tarmproblemer
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0051] occurrences matches {0..1} matches {    -- Magesår, magekatarr, spiserørsbrokk eller sure oppstøt:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0052] occurrences matches {0..1} matches {    -- Beskrivelse magesår
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0053] occurrences matches {0..1} matches {    -- Psykisk sykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0054] occurrences matches {0..1} matches {    -- Beskrivelse psykisk sykdom
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Rus- eller alkoholavhengighet:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0056] occurrences matches {0..1} matches {    -- Beskrivelse rus- eller alkohol
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0057] occurrences matches {0..1} matches {    -- Smittsom sykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0058] occurrences matches {0..1} matches {    -- Beskrivelse smittsom sykdom
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0059] occurrences matches {0..1} matches {    -- Annen helseinformasjon eller sykdom sykehuset bør vite om:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0060] occurrences matches {0..1} matches {    -- Beskrivelse annen helseinformasjon
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0061] occurrences matches {0..1} matches {    -- Operert tidligere:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0062] occurrences matches {0..1} matches {    -- Beskrivelse operert
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0063] occurrences matches {0..1} matches {    -- Tidligere keisersnitt:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0064] occurrences matches {0..1} matches {    -- Beskrivelse keisersnitt
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0065] occurrences matches {0..1} matches {    -- Komplikasjoner etter operasjon:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0066] occurrences matches {0..1} matches {    -- Beskrivelse komplikasjoner operasjon
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0067] occurrences matches {0..1} matches {    -- Komplikasjoner etter keisersnitt:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0068] occurrences matches {0..1} matches {    -- Beskrivelse komplikasjoner keisersnitt
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0069] occurrences matches {0..1} matches {    -- Tidligere narkose/spinal/epidural:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0070] occurrences matches {0..1} matches {    -- Beskrivelse tidligere narkose
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0071] occurrences matches {0..1} matches {    -- Problemer i forbindelse med narkose, spinal eller epidural
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0072] occurrences matches {0..1} matches {    -- Beskrivelse problemer narkose
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0073] occurrences matches {0..1} matches {    -- Pasient eller noen i slekten har reagert unormalt på bedøvelse
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0074] occurrences matches {0..1} matches {    -- Pasient eller noen i slekten har reagert unormalt på narkose
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0075] occurrences matches {0..1} matches {    -- Pasient eller noen i slekten har reagert unormalt på både bedøvelse og narkose
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0076] occurrences matches {0..1} matches {    -- Beskrivelse bedøvelse narkose
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0077] occurrences matches {0..1} matches {    -- Kvalme/reisesyke:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0078] occurrences matches {0..1} matches {    -- Beskrivelse kvalme/reisesyke
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0079] occurrences matches {0..1} matches {    -- Problemer med å bøye hodet bakover:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0080] occurrences matches {0..1} matches {    -- Beskrivelse problemer bøye hodet
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0081] occurrences matches {0..1} matches {    -- Problemer med å bevege kjeven eller nedsatt gapeevne:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0082] occurrences matches {0..1} matches {    -- Beskrivelse nedsatt gapeevne
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0083] occurrences matches {0..1} matches {    -- Problemer med å ligge flatt på ryggen:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0084] occurrences matches {0..1} matches {    -- Beskrivelse ligge flatt
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0085] occurrences matches {0..1} matches {    -- Har løse tenner, tannprotese eller piercing i munnen:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0086] occurrences matches {0..1} matches {    -- Beskrivelse løse tenner
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0087] occurrences matches {0..1} matches {    -- Sår eller utslett:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0088] occurrences matches {0..1} matches {    -- Beskrivelse sår utslett
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0089] occurrences matches {0..1} matches {    -- Problemer med syn, hørsel eller å snakke:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0090] occurrences matches {0..1} matches {    -- Behov for kommunikasjonsstøtte:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0091] occurrences matches {0..1} matches {    -- Ønsker tolk, språk:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0092] occurrences matches {0..1} matches {    -- Klarer ikke dusje, kle på seg, eller utføre daglige gjøremål:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0093] occurrences matches {0..1} matches {    -- Behov for spesialkost:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0094] occurrences matches {0..1} matches {    -- Allergi for matvarer, pollen, latex, nikkel eller annet:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0095] occurrences matches {0..1} matches {    -- Beskrivelse allergi matvarer
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0096] occurrences matches {0..1} matches {    -- Andre forhold sykehuset trenger å vite om ifbm. undersøkelse/behandling:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"test_oppsummering_helseopplysninger_hn">
+					description = <"test_oppsummering_helseopplysninger_hn">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Høyde:">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Vekt:">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Vekttap siste ukene:">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Gravid:">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Beskrivelse">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Uker gravid">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"BMI:">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Ammer">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Antibiotikaresistente bakterier prøve">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Alkoholforbruk">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Røyker">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Bruker snus">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Sluttet å røyke i:">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Årstall">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Sluttet med snus i:">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Årstall">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Bruker rusmidler">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Blodfortynnende medikamenter:">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Reseptbelagte medikamenter:">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Reseptfrie medikamenter, naturmedisiner eller kosttilskudd:">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Legemiddelallergi:">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Beskrivelse legemiddelallergi">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Hjerte- karsykdom:">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Beskrivelse hjerte- karsykdom">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Får brystsmerter eller tungpust ved trappegange i normalt tempo">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Beskrivelse brystsmerter">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Hypertensjon:">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Beskrivelse hypertensjon">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Søvnapné:">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Bruker CPAP eller BiPAP">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Økt blødningstendens:">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Beskrivelse blødningstendens">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"Nevrologisk sykdom:">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Beskrivelse nevrologisk sykdom">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"Nyresykdom:">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Beskrivelse nyresykdom">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Leversykdom:">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Beskrivelse leversykdom">
+					description = <"">
+				>
+				["at0043"] = <
+					text = <"Diabetes:">
+					description = <"">
+				>
+				["at0044"] = <
+					text = <"Beskrivelse diabetes">
+					description = <"">
+				>
+				["at0045"] = <
+					text = <"Stoffskifteproblemer:">
+					description = <"">
+				>
+				["at0046"] = <
+					text = <"Beskrivelse stoffskifteproblemer">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"Leddgikt eller muskel- og skjelettsykdom:">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"Beskrivelse leddgikt">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"Mage/tarmproblemer:">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"Beskrivelse mage/tarmproblemer">
+					description = <"">
+				>
+				["at0051"] = <
+					text = <"Magesår, magekatarr, spiserørsbrokk eller sure oppstøt:">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Beskrivelse magesår">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Psykisk sykdom:">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Beskrivelse psykisk sykdom">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Rus- eller alkoholavhengighet:">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Beskrivelse rus- eller alkohol">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Smittsom sykdom:">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Beskrivelse smittsom sykdom">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Annen helseinformasjon eller sykdom sykehuset bør vite om:">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Beskrivelse annen helseinformasjon">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Operert tidligere:">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Beskrivelse operert">
+					description = <"">
+				>
+				["at0063"] = <
+					text = <"Tidligere keisersnitt:">
+					description = <"">
+				>
+				["at0064"] = <
+					text = <"Beskrivelse keisersnitt">
+					description = <"">
+				>
+				["at0065"] = <
+					text = <"Komplikasjoner etter operasjon:">
+					description = <"">
+				>
+				["at0066"] = <
+					text = <"Beskrivelse komplikasjoner operasjon">
+					description = <"">
+				>
+				["at0067"] = <
+					text = <"Komplikasjoner etter keisersnitt:">
+					description = <"">
+				>
+				["at0068"] = <
+					text = <"Beskrivelse komplikasjoner keisersnitt">
+					description = <"">
+				>
+				["at0069"] = <
+					text = <"Tidligere narkose/spinal/epidural:">
+					description = <"">
+				>
+				["at0070"] = <
+					text = <"Beskrivelse tidligere narkose">
+					description = <"">
+				>
+				["at0071"] = <
+					text = <"Problemer i forbindelse med narkose, spinal eller epidural">
+					description = <"">
+				>
+				["at0072"] = <
+					text = <"Beskrivelse problemer narkose">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Pasient eller noen i slekten har reagert unormalt på bedøvelse">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Pasient eller noen i slekten har reagert unormalt på narkose">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Pasient eller noen i slekten har reagert unormalt på både bedøvelse og narkose">
+					description = <"">
+				>
+				["at0076"] = <
+					text = <"Beskrivelse bedøvelse narkose">
+					description = <"">
+				>
+				["at0077"] = <
+					text = <"Kvalme/reisesyke:">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Beskrivelse kvalme/reisesyke">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Problemer med å bøye hodet bakover:">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Beskrivelse problemer bøye hodet">
+					description = <"">
+				>
+				["at0081"] = <
+					text = <"Problemer med å bevege kjeven eller nedsatt gapeevne:">
+					description = <"">
+				>
+				["at0082"] = <
+					text = <"Beskrivelse nedsatt gapeevne">
+					description = <"">
+				>
+				["at0083"] = <
+					text = <"Problemer med å ligge flatt på ryggen:">
+					description = <"">
+				>
+				["at0084"] = <
+					text = <"Beskrivelse ligge flatt">
+					description = <"">
+				>
+				["at0085"] = <
+					text = <"Har løse tenner, tannprotese eller piercing i munnen:">
+					description = <"">
+				>
+				["at0086"] = <
+					text = <"Beskrivelse løse tenner">
+					description = <"">
+				>
+				["at0087"] = <
+					text = <"Sår eller utslett:">
+					description = <"">
+				>
+				["at0088"] = <
+					text = <"Beskrivelse sår utslett">
+					description = <"">
+				>
+				["at0089"] = <
+					text = <"Problemer med syn, hørsel eller å snakke:">
+					description = <"">
+				>
+				["at0090"] = <
+					text = <"Behov for kommunikasjonsstøtte:">
+					description = <"">
+				>
+				["at0091"] = <
+					text = <"Ønsker tolk, språk:">
+					description = <"">
+				>
+				["at0092"] = <
+					text = <"Klarer ikke dusje, kle på seg, eller utføre daglige gjøremål:">
+					description = <"">
+				>
+				["at0093"] = <
+					text = <"Behov for spesialkost:">
+					description = <"">
+				>
+				["at0094"] = <
+					text = <"Allergi for matvarer, pollen, latex, nikkel eller annet:">
+					description = <"">
+				>
+				["at0095"] = <
+					text = <"Beskrivelse allergi matvarer">
+					description = <"">
+				>
+				["at0096"] = <
+					text = <"Andre forhold sykehuset trenger å vite om ifbm. undersøkelse/behandling:">
+					description = <"">
+				>
+			>
+		>
+	>
