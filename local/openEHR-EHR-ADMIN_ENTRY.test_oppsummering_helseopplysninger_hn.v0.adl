@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6ae8353ca752e46e7a67aad9514c072e">
+		["MD5-CAM-1.0.1"] = <"3bfb81ce656b64644b573abbc1f3141f">
 		["build_uid"] = <"3feee644-cb1c-35f5-8aad-f9ab65b26108">
 	>
 
@@ -32,6 +32,11 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0097] occurrences matches {0..1} matches {    -- Dato pasient svarte på skjemaet
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
 					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Høyde:
 						value matches {
 							C_DV_QUANTITY <
@@ -896,6 +901,10 @@ ontology
 				>
 				["at0096"] = <
 					text = <"Andre forhold sykehuset trenger å vite om ifbm. undersøkelse/behandling:">
+					description = <"">
+				>
+				["at0097"] = <
+					text = <"Dato pasient svarte på skjemaet">
 					description = <"">
 				>
 			>
