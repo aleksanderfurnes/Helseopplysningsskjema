@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3bfb81ce656b64644b573abbc1f3141f">
+		["MD5-CAM-1.0.1"] = <"0a12754ad4f5f14d65a764a4cfc27f1b">
 		["build_uid"] = <"3feee644-cb1c-35f5-8aad-f9ab65b26108">
 	>
 
@@ -81,16 +81,9 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0010] occurrences matches {0..1} matches {    -- Uker gravid
+					ELEMENT[at0098] occurrences matches {0..1} matches {    -- Uker gravid
 						value matches {
-							C_DV_QUANTITY <
-								property = <[openehr::128]>
-								list = <
-									["1"] = <
-										units = <"wk">
-									>
-								>
-							>
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Ammer
@@ -555,10 +548,6 @@ ontology
 					text = <"Beskrivelse">
 					description = <"">
 				>
-				["at0010"] = <
-					text = <"Uker gravid">
-					description = <"">
-				>
 				["at0011"] = <
 					text = <"BMI:">
 					description = <"">
@@ -905,6 +894,10 @@ ontology
 				>
 				["at0097"] = <
 					text = <"Dato pasient svarte på skjemaet">
+					description = <"">
+				>
+				["at0098"] = <
+					text = <"Uker gravid">
 					description = <"">
 				>
 			>
