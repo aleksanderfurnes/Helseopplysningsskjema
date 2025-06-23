@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "e619d28e2f994ea6f6db90d43afaf736",
+      "MD5-CAM-1.0.1" : "198c20838afe2686f6a961cd6a558ede",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -142,7 +142,7 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ADMIN_ENTRY",
         "occurrences" : "0..1",
-        "nodeId" : "at0.10",
+        "nodeId" : "at0.12",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-ADMIN_ENTRY.ovl-test_oppsummering_helseopplysninger_hn-001.v0",
@@ -225,7 +225,7 @@
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "f7b889fe-38ea-4f5b-9963-1fd223248836",
+    "uid" : "2a4c1a62-0156-43a6-9415-249ac15e9575",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -234,7 +234,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "0a12754ad4f5f14d65a764a4cfc27f1b"
+        "PARENT:MD5-CAM-1.0.1" : "c6b4e519a641082fa0605032cff48bc6"
       },
       "details" : { }
     },
