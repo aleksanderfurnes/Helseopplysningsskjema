@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0a12754ad4f5f14d65a764a4cfc27f1b">
+		["MD5-CAM-1.0.1"] = <"c6b4e519a641082fa0605032cff48bc6">
 		["build_uid"] = <"3feee644-cb1c-35f5-8aad-f9ab65b26108">
 	>
 
@@ -187,6 +187,16 @@ definition
 						}
 					}
 					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Beskrivelse hypertensjon
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0099] occurrences matches {0..1} matches {    -- Lungesykdom:
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0100] occurrences matches {0..1} matches {    -- Beskrivelse lungesykdom
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -898,6 +908,14 @@ ontology
 				>
 				["at0098"] = <
 					text = <"Uker gravid">
+					description = <"">
+				>
+				["at0099"] = <
+					text = <"Lungesykdom:">
+					description = <"">
+				>
+				["at0100"] = <
+					text = <"Beskrivelse lungesykdom">
 					description = <"">
 				>
 			>
