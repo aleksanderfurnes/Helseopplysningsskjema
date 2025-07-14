@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "63606b1a9384aa1724c14609c24902d5",
+      "MD5-CAM-1.0.1" : "f0a9fd4746d4ec60a47c910c8d8c34f4",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -1922,7 +1922,6 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
                           "nodeId" : "at0025.1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -2113,6 +2112,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.20",
             "description" : ""
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Eventuelt andre pårørende",
+            "description" : "Ytterligere fritekst om det spesifikke sosiale forholdet som ikke er omfattet av andre felt."
           }
         },
         "it" : {
@@ -16742,6 +16747,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
           "nodeId" : "at0004.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -16765,6 +16771,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0010.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -16784,12 +16791,6 @@
             "text" : "Fullt navn på nærmeste pårørende",
             "description" : "Ustrukturert navn for personen.",
             "comment" : "Innholdet i dette elementet kan være en sammenstilling av en eller flere komponenter fra arketypen CLUSTER.structured_name. For eksempel: \"John Markham\", \"Professor Sir John Markham\", \"John Markham Jnr MP\"."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Eventuelt andre pårørende",
-            "description" : "Ytterligere fritekst om personen som ikke er registrert i andre felt."
           },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
