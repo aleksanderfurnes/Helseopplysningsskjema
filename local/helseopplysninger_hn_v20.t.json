@@ -19,7 +19,7 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "MD5-CAM-1.0.1" : "2f9d37341c7340386e26b1803dd69340",
+      "MD5-CAM-1.0.1" : "bad2928d6654b239b378f5630d4238b5",
       "PARENT:MD5-CAM-1.0.1" : "BBA2C8A4A40921B9CD67FB733F13FBBF"
     },
     "details" : {
@@ -325,7 +325,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "helseopplysninger_hn_v17",
+          "text" : "helseopplysninger_hn_v20",
           "description" : "Generisk container for informasjon gitt av et individ."
         }
       },
@@ -15772,7 +15772,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "B81595333B2594EB3FB0C8356062E45A"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Schaffung eines Rahmens für die Erfassung von Antworten auf vordefinierte Screening-Fragen zur Reisetätigkeit.",
+          "keywords" : [ "Reise, Fahrt, Ausflug, Übersee, inländisch, Inland, lokal, national, Ausland, Auslandsreise, international, Schiff, Seereise." ],
+          "use" : "Zur Darstellung eines Schemas für die Aufzeichnung von Antworten auf vordefinierte Screening-Fragen zur Reisetätigkeit.\r\n\r\nHäufige Anwendungsfälle sind unter anderem:\r\n- Überwachung von Infektionskrankheiten\r\n- Erstellung eines Patientenprofils in einem Krankheitsregister\r\n- Systematische Befragung im Rahmen einer Konsultation im Zusammenhang mit Krankheitsmustern.\r\n\r\nDie Semantik dieses Archetyps ist absichtlich freier, und eine Abfrage dieses Archetyps wäre normalerweise nur im Kontext der jeweiligen Vorlage sinnvoll oder sicher. Jedes Datenelement wird in der Regel in einer Vorlage umbenannt, um die spezifische Frage darzustellen. Wenn Wertemengen für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese an die lokalen Anforderungen angepasst werden, indem die Datentypen DV_TEXT oder DV_BOOLEAN verwendet werden, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nDie Verwendung dieses Schemas in einer Vorlage ermöglicht die Dokumentation eines breiten Spektrums von Frage-Antwort-Paaren, wie z. B.:\r\n- Waren Sie in den letzten 6 Wochen im Ausland? Ja, Nein, Unsicher.\r\n- Sind Sie im letzten Jahr nach Afrika gereist? Ja, Nein, Unsicher.\r\n- Ist der Patient in den letzten 2 Wochen in ein Gebiet gereist, in dem Malaria endemisch ist? Ja, Nein, Unbekannt.\r\n- Ist der Patient jemals in ein aktives Kriegsgebiet gereist? Ja, Nein, Unbekannt.\r\n\r\nDie EVENT-Struktur aus dem Referenzmodell kann verwendet werden, um anzugeben, ob sich die Fragen auf einen bestimmten Zeitpunkt oder auf einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einem Fragebogen zu unterscheiden, der Informationen über Untersuchungen oder Tests aufzeichnet, die zu einem beliebigen Zeitpunkt in der Vergangenheit durchgeführt wurden, und einem Fragebogen, der Informationen über Untersuchungen oder Tests enthält, die innerhalb eines bestimmten Zeitintervalls durchgeführt wurden – zum Beispiel der Unterschied zwischen „Sind Sie jemals in ein Gebiet mit hoher Strahlungsaktivität gereist?“ und „Sind Sie in den letzten vier Wochen in ein Gebiet mit hoher Strahlungsaktivität gereist?“\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann aber mit Hilfe des Elements \"Informationsanbieter\" im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde für die Verwendung als Screening-Instrument oder für die Aufzeichnung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister konzipiert. Wenn der Screening-Fragebogen angibt, dass eine Untersuchung durchgeführt wurde, können zusätzliche Details, die für die Persistenz als Teil einer klinischen Akte erforderlich sind, mit Hilfe spezifischer Archetypen für Testergebnisse erfasst werden.\r\n",
+          "misuse" : "Nicht für die Aufzeichnung eines Reiseverlaufs zu verwenden - verwenden Sie zu diesem Zweck ADMIN_ENTRY.travel_event.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte kartleggingsspørsmål om reiseaktivitet til eller fra ett eller flere geografiske steder utenfor personens vanlige bosted.\r\n",
+          "keywords" : [ "reise, utenlandsreise, innenlands, lokal, nasjonal, internasjonal  ferie, ferietur, utenlandsferie, tur, sjøreise." ],
+          "use" : "Brukes til å lage et rammeverk for å registrere svar på forhåndsdefinerte kartleggingsspørsmål om reiseaktivitet til eller fra ett eller flere geografiske steder utenfor personens vanlige bosted, for eksempel for å kartlegge mulig opphold i et katastrofeområde eller mulig eksponering for et smittestoff.\r\n\r\nBruksområder inkluderer, men er ikke begrenset til:\r\n- overvåkning av smittsomme sykdommer\r\n- opprettelse av pasientprofil i et sykdomsregister\r\n- systematiske spørsmål i hvilken som helst konsultasjon relatert til sykdomsmønster\r\n \r\nSemantikken i denne arketypen er med overlegg løst definert, og spørringer etter data i arketypen vil vanligvis kun være hensiktsmessig eller sikkert innenfor konteksten av et spesifikt templat. Hvert dataelement vil normalt sett bli døpt om i templatet for å representere den spesifikke spørsmålsstillingen. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN i stedet.\r\n\r\n \r\nÅ bruke dette rammeverket i et templat tillater dokumentasjon av et bredt spekter av spørsmål/svar som f.eks.:\r\n- Har du vært i utlandet i løpet av de siste 6 ukene? Ja, Nei, Usikker.\r\n- Har du reist til Afrika i løpet av de siste 12 månedene? Ja, Nei, Usikker.\r\n- Har pasienten reist til et område der malaria er endemisk i løpet av de siste 2 ukene? Ja, Nei, Ukjent.\r\n- Har pasienten noen gang reist til en aktiv krigssone? Ja, Nei, Ukjent.\r\n \r\nEVENT-strukturen fra referansemodellen kan brukes til å spesifisere om spørsmålene er relatert til et tidspunkt eller et tidsintervall. Bruk en separat instans av denne arketypen for å skille mellom spørsmål om undersøkelser eller tester som er gjort når som helst i fortiden og spørsmål om undersøkelser eller tester som er gjort i et spesifikt tidsintervall - for eksempel forskjellen mellom \"Har du reist i et område med høy radioaktiv aktivitet?\" og \"Har du reist i et område med høy radioaktiv aktivitet i løpet av de siste fire ukene?\".\r\n \r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan spesifiseres ved å bruke elementet \"Information provider\" i openEHR-referansemodellen.\r\n \r\nDenne arketypen er utformet for å brukes som et kartleggingsverktøy eller for å lagre enkle spørreskjema-data for bruk i f.eks. sykdomsregister. Hvis kartleggingsskjemaet avdekker en reiseaktivitet som har funnet sted, kan tilleggsopplysninger som kreves for varig dokumentasjon (persistens) i en klinisk journal registreres ved hjelp av relevante arketyper.",
+          "misuse" : "Denne arketypen skal ikke brukes til å registrere en komplett reisehistorikk. Bruk i stedet ADMIN_ENTRY.travel_event til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about  movement to or from one or more geographic locations outside of the individual’s usual place ofresidence.",
+          "keywords" : [ "travel, overseas, domestic, local, national, abroad, international, journey, trip, voyage." ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about movement to or from one or more geographic\r\nlocations outside of the individual’s usual place of residence,  for example to survey for possible stay within a disaster area or for possible\r\nexposure to an infectious agent.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Infectious disease surveillance\r\n- Creating a patient profile in a disease registry\r\n- Systematic questioning in any consultation related to patterns of disease.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. Each data element would usually be renamed in a template to represent the specific question asked. Where value sets have been proposed for common use cases, these can be adapted to align with local requirements by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. \r\n\r\nUtilising this framework within a template can enable documentation of a broad range of question/answer pairs such as:\r\n- Have you been overseas in the past 6 weeks? Yes, No, Unsure.\r\n- Have you travelled to Africa in the past 1 year? Yes, No, Unsure.\r\n- Has the patient travelled to an area where malaria is endemic in the past 2 weeks? Yes, No, Unknown.\r\n- Has the patient ever travelled to an active war zone? Yes, No, Unknown.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a specific point in time or a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about an investigation or test that has been done at any time in the past and information about an investigation or test done within a specified time interval - for example, the difference between \"Have you ever travelled to an area with high radiation activity?\" and \"Have you travelled to an area with high radiation activity during the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies a travel activity tha has been carried out, additional details required for persistence as part of a clinical record can be captured using relevant archetypes.",
+          "misuse" : "Not to be used for recording a travel history - use ADMIN_ENTRY.travel_event for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.travel_screening.v1",
     "differential" : true,
@@ -15916,7 +15963,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.6" ],
+                                  "constraint" : [ "ac0.10" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -16009,10 +16056,10 @@
             "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.10",
             "description" : ""
           }
         },
@@ -16029,10 +16076,10 @@
             "code" : "ac0.3",
             "description" : ""
           },
-          "ac0.6" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.10",
             "description" : ""
           }
         },
@@ -16060,13 +16107,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
             "text" : "Antibiotikaresistende bakterier",
-            "description" : "Finnes det en historikk for den identifiserte \"reiseaktiviteten\"?",
-            "comment" : "I et templat vil dataelementet vanligvis bli omdøpt til det spesifikke spørsmålet som stilles. Det foreslåtte verdisettet kan tilpasses til lokal bruk ved å velge mellom DV_TEXT eller DV_BOOLEAN datatypene for å tilrettelegge for hvert enkelt bruksområde."
+            "description" : "Ved time til poliklinikk trenger du ikke teste deg for antibiotikaresistente bakterier.\n\nHar du i løpet av de siste 12 månedene vært utenfor Norden, og gjort noe av følgende:\n- Vært innlagt på helseinstitusjon?\n- Vært på flukt eller bodd i flyktningmottak/-leir? \n- Fått dagbehandling over 4 timer eller dagkirurgi i helseinstitusjon?\n- Arbeidet i helseinstitusjon?\n- Fått omfattende tannbehandling?\n- Vært på behandlingsreise?\n- Bodd sammen med en person som har fått påvist MRSA, ESBL og/eller VRE?\n\nHvis svaret er «Ja» på én eller flere av spørsmålene, skal du velge alternativ «Ja»."
           },
-          "ac0.6" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.10",
             "description" : ""
           }
         }
@@ -16102,6 +16148,26 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0036", "at0037", "at0048" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0036", "at0037", "at0048" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0036", "at0037", "at0048" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0036", "at0037", "at0048" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
           "members" : [ "at0036", "at0037", "at0048" ]
         }
       }
@@ -16160,7 +16226,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "36fa1e69810a5d5c2737957b724ef29c"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.helseopplysninger_mrsa_hn.v2",
     "differential" : true,
